@@ -1,11 +1,14 @@
 const title = document.querySelector(".title")
-const date = document.querySelector(".date")
-
-function sana(params) {
-    let date = new Date()
-}
 
 function clock() {
+// var weekend =["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+//     var month = ["January", "February", "March", "April", "May", "June",
+//     "July", "August", "September", "October", "November", "December" ];
+
+//     var now = new Date()
+//     document.getElementById(`date`).innerHTML = (weekend[now.getDay()]+ " " + now.getDate()+ ` `+ month[now.month()]+ ` ` + now.getFullYear())
+
+
 let date = new Date()
 let hour = date.getHours()
 let minute = date.getMinutes()
