@@ -1,6 +1,3 @@
-
-
-
 const clock = document.querySelector(".clock")
         const day = document.querySelector(".day")
         const kun = document.querySelector(".date")
@@ -11,10 +8,10 @@ const clock = document.querySelector(".clock")
                 let hour = date.getHours().toString().padStart(2, "0")
                 let minute = date.getMinutes().toString().padStart(2, "0")
                 let second = date.getSeconds().toString().padStart(2, "0")
-                // let millisecond = date.getMilliseconds().toString().padStart(2, "0")
-                // let day = date.getDay()
+                let millisecond = date.getMilliseconds().toString().padStart(2, "0")
+                let day = date.getDay()
                 clock.textContent = `${hour}:${minute}:${second}`;
-                // millisecond.textContent = `${millisecond}`
+                millisecond.textContent = `${millisecond}`
             }
             soat()
             setInterval(()=>{
